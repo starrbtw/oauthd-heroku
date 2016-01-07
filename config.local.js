@@ -1,4 +1,4 @@
-exports.host_url = "http://oauthd-thyb.herokuapp.com/";
+exports.host_url = "http://twawearables-oauthd.herokuapp.com/";
 exports.port = process.env.PORT || 80;
 if (process.env.REDIS_URL) {
     var redis_conf = process.env.REDIS_URL.match(/redis:\/\/(.+):(.+)@(.+):(.+)\//);
