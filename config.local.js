@@ -1,7 +1,7 @@
 exports.host_url = "http://oauthd-thyb.herokuapp.com/";
 exports.port = process.env.PORT || 80;
-if (process.env.REDISTOGO_URL) {
-    var redis_conf = process.env.REDISTOGO_URL.match(/redis:\/\/(.+):(.+)@(.+):(.+)\//);
+if (process.env.REDIS_URL) {
+    var redis_conf = process.env.REDIS_URL.match(/redis:\/\/(.+):(.+)@(.+):(.+)\//);
     exports.redis = {
         port: redis_conf[4],
         host: redis_conf[3],
