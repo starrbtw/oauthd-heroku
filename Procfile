@@ -1,1 +1,1 @@
-web: node lib/oauthd.js
+web: oauthd start
